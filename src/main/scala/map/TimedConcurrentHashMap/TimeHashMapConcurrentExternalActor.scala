@@ -1,20 +1,18 @@
 package map.TimedConcurrentHashMap
 
-import java.util.concurrent.atomic.AtomicInteger
-import map.ActorsTimedConcurrentHashMap.StampedObject
-
-import scala.collection.convert.decorateAsScala._
 import java.util.concurrent.ConcurrentHashMap
+import java.util.concurrent.atomic.AtomicInteger
 
 import akka.actor.{ActorSystem, Scheduler}
+import map.ActorsTimedConcurrentHashMap.StampedObject
 
 import scala.collection.concurrent
+import scala.collection.JavaConverters._
 import scala.concurrent.ExecutionContextExecutor
 import scala.concurrent.duration._
 
 
-
-class TimeHashMapConcurrentExternalActor[K, V](system:ActorSystem) extends TimeBasedHashMapConcurrent[K, V] with Size {
+class TimeHashMapConcurrentExternalActor[K, V](system: ActorSystem) extends TimeBasedHashMapConcurrent[K, V] with Size {
   val scheduler: Scheduler = system.scheduler
   implicit val executor: ExecutionContextExecutor = system.dispatcher
   var counter = new AtomicInteger(0)

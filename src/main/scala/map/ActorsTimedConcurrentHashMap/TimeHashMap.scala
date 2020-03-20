@@ -1,7 +1,8 @@
 package map.ActorsTimedConcurrentHashMap
+
 import akka.actor.{Actor, ActorSystem, Props, Timers}
-import akka.util.Timeout
 import akka.pattern._
+import akka.util.Timeout
 
 import scala.concurrent.Future
 import scala.concurrent.duration._
@@ -19,64 +20,64 @@ trait TimeBasedHashMap[K, V] {
 object ActorSystemRef {
 
   import com.typesafe.config.ConfigFactory
+
   val config = ConfigFactory.load("application.conf")
   val system = ActorSystem("TimeHashMapActorSystemRef", config.getConfig("PerformanceApp").withFallback(config))
-//    val system = ActorSystem("TimeHashMapActorSystemRef")
 }
 
 class TimeHashMap[K, V](system: ActorSystem) extends TimeBasedHashMap[K, V] {
 
   import TimedActor._
 
-  implicit val timeout = Timeout ( 3.seconds )
-//  val actor=  system.actorOf(Props[TimedActor[K,V]])
-  val actor=  system.actorOf(Props[TimedActor[K,V]].withDispatcher("akka.actor.my-dispatcher"))
+  implicit val timeout = Timeout(3.seconds)
+  val actor = system.actorOf(Props[TimedActor[K, V]].withDispatcher("akka.actor.my-dispatcher"))
 
-  override def put(k: K, v: V, duration: FiniteDuration): Future[Unit] = actor.ask ( Insert ( k, v, duration ) ).mapTo [Unit]
-
-
-  override def get(k: K): Future[Option[V]] = actor.ask ( Get ( k ) ).mapTo [Option[V]]
+  override def put(k: K, v: V, duration: FiniteDuration): Future[Unit] = actor.ask(Insert(k, v, duration)).mapTo[Unit]
 
 
-  override def remove(k: K): Future[Option[V]] = actor.ask ( Remove ( k ) ).mapTo [Option[V]]
+  override def get(k: K): Future[Option[V]] = actor.ask(Get(k)).mapTo[Option[V]]
 
 
-  override def size(): Future[Int] = actor.ask ( Size ).mapTo [Int]
+  override def remove(k: K): Future[Option[V]] = actor.ask(Remove(k)).mapTo[Option[V]]
+
+
+  override def size(): Future[Int] = actor.ask(Size).mapTo[Int]
 
 }
 
 class TimedActor[K, V] extends Actor with Timers {
 
   import TimedActor._
-  val map = collection.mutable.Map [K, StampedObject[V]]()
+
+  val map = collection.mutable.Map[K, StampedObject[V]]()
   var counter: Long = 0
   implicit val executionContext = context.system.dispatchers.lookup("akka.actor.my-dispatcher")
-//implicit val executor =  scala.concurrent.ExecutionContext.global
 
   override def receive: Receive = {
-    case Insert ( k: K, v: V, duration: FiniteDuration ) =>
-      val stampedObject = StampedObject ( v, counter )
-      map.update ( k, stampedObject )
+    case Insert(k: K, v: V, duration: FiniteDuration) =>
+      val stampedObject = StampedObject(v, counter)
+      map.update(k, stampedObject)
       counter += 1
       val expectedCounter = counter - 1
-      context.system.scheduler.scheduleOnce(duration) {self.tell(TryRemove(k, expectedCounter), self)}
+      context.system.scheduler.scheduleOnce(duration) {
+        self.tell(TryRemove(k, expectedCounter), self)
+      }
     case Size =>
-      sender () ! map.size
+      sender() ! map.size
 
-    case Remove ( k: K ) =>
-      val result = map.remove ( k )
-      sender () ! result.map ( _.value )
+    case Remove(k: K) =>
+      val result = map.remove(k)
+      sender() ! result.map(_.value)
 
-    case TryRemove ( k: K, stamp: Long ) =>
-      map.get ( k )
+    case TryRemove(k: K, stamp: Long) =>
+      map.get(k)
         .filter { stamped =>
-//          println ( s"checking $stamped against $stamp" )
           stamped.stamp == stamp
         }
-        .foreach ( _ => map.remove ( k ) )
+        .foreach(_ => map.remove(k))
 
-    case Get ( k: K ) =>
-      sender () ! map.get ( k ).map ( _.value )
+    case Get(k: K) =>
+      sender() ! map.get(k).map(_.value)
   }
 
   override def toString = s"TimedActor($map)"

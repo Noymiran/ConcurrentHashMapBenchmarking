@@ -2,8 +2,6 @@ package benchmarking
 
 import java.util.concurrent.TimeUnit
 
-import akka.actor.ActorSystem
-import map.ActorsTimedConcurrentHashMap.ActorSystemRef
 import map.TimedConcurrentHashMap.TimeHashMapConcurrent
 import org.openjdk.jmh.annotations._
 

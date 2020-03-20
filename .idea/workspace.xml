@@ -269,7 +269,7 @@
           <value>
             <list>
               <ExternalProjectPojo>
-                <option name="name" value="performanceproject [file:/home/noymiran/Downloads/PerformanceProject/]" />
+                <option name="name" value="performanceproject [file:/home/noymiran/gitPersonal/PerformanceProject/]" />
                 <option name="path" value="$PROJECT_DIR$" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
@@ -283,7 +283,6 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="4673064596000" />
         <entry key="$PROJECT_DIR$/build.sbt" value="3856611416" />
         <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
         <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2259821295" />
@@ -292,7 +291,6 @@
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$/../FiloDB" value="PREVIEW" />
-        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
         <entry key="$PROJECT_DIR$/../Play-ReactiveMongo" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../PlayMongoForm" value="PREVIEW" />
         <entry key="$PROJECT_DIR$/../anomaliesproject" value="PREVIEW" />
@@ -378,7 +376,7 @@
       <workItem from="1584710940579" duration="4229000" />
       <workItem from="1584720170443" duration="519000" />
       <workItem from="1584720715932" duration="601000" />
-      <workItem from="1584739093638" duration="34000" />
+      <workItem from="1584739093638" duration="368000" />
     </task>
     <servers />
   </component>

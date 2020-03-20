@@ -1,14 +1,12 @@
 package map.TimedConcurrentHashMap
 
+import java.util.concurrent.ConcurrentHashMap
 import java.util.concurrent.atomic.AtomicInteger
 
+import akka.actor.{ActorSystem, Scheduler}
 import map.ActorsTimedConcurrentHashMap.StampedObject
 
-import scala.collection.convert.decorateAsScala._
-import java.util.concurrent.ConcurrentHashMap
-
-import akka.actor.{ActorSystem, Scheduler}
-
+import scala.collection.JavaConverters._
 import scala.collection.concurrent
 import scala.concurrent.ExecutionContextExecutor
 import scala.concurrent.duration._

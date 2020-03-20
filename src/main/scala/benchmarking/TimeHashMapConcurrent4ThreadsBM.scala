@@ -3,7 +3,7 @@ package benchmarking
 import java.util.concurrent.TimeUnit
 
 import map.ActorsTimedConcurrentHashMap.ActorSystemRef
-import map.TimedConcurrentHashMap.{TimeHashMapConcurrent, TimeHashMapConcurrentExternalActor}
+import map.TimedConcurrentHashMap.TimeHashMapConcurrentExternalActor
 import org.openjdk.jmh.annotations._
 
 import scala.concurrent.Await
@@ -19,8 +19,7 @@ import scala.concurrent.duration._
 class TimeHashMapConcurrent4ThreadsBM {
 
   var map: TimeHashMapConcurrentExternalActor[Long, Any] = _
-  val duration:Duration=15.seconds
-
+  val duration: Duration = 15.seconds
 
 
   @Setup(Level.Trial)
@@ -146,8 +145,8 @@ class TimeHashMapConcurrent4ThreadsBM {
     }
   }
 
-  @TearDown (Level.Trial)
+  @TearDown(Level.Trial)
   def shutdown(): Unit = {
-    Await.ready( ActorSystemRef.system.terminate(),duration)
+    Await.ready(ActorSystemRef.system.terminate(), duration)
   }
 }
