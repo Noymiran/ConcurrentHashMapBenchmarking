@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1af69701-0d2c-49ee-ad3e-ccb20bea6851" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="PerformanceProject" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit4 Test Class" />
+        <option value="ScalaTest Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TimeBasedHashMap</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="userSettingsFile" value="$USER_HOME$/.m2/settings2.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="240" />
+    <option name="y" value="150" />
+    <option name="width" value="1440" />
+    <option name="height" value="742" />
+  </component>
+  <component name="ProjectId" id="1Z7zMbDjwXWXd0JVUeR8Fr74GGs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="sortByType" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="ScalaTest" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.ScalaTest" value="org.scalatest.FunSuite" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="sbt.project.settings.configurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="map.ActorsTimedConcurrentHashMap" />
+      <recent name="map.TimedConcurrentHashMap" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="org.scalatest.FunSuite" />
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="benchmarking" />
+      <recent name="" />
+      <recent name="map" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/scala/map/TimedConcurrentHashMap" />
+      <recent name="$PROJECT_DIR$/src/main/resources" />
+      <recent name="$PROJECT_DIR$/src/main/scala/TimedConcurrentHashMapBM" />
+      <recent name="$PROJECT_DIR$/src/main/scala/ActorsTimedCncurrentHashMapBM" />
+      <recent name="$PROJECT_DIR$/src/main/scala/benchmarking/ActorsBM" />
+    </key>
+  </component>
+  <component name="RunManager" selected="ScalaTest.TimeHashMapConcurrentExternalActorTest">
+    <configuration name="Bench" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="tasks" value="jmh:run -h" />
+      <option name="useSbtShell" value="true" />
+      <option name="vmparams" value="-Xms512M -Xmx1024M -Xss1M -XX:+CMSClassUnloadingEnabled" />
+      <option name="workingDir" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeHashMapConcurrentExternalActorTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="PerformanceProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" value="" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="map.TimedConcurrentHashMap.TimeHashMapConcurrentExternalActorTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeHashMapConcurrentTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="PerformanceProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" value="" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="map.TimedConcurrentHashMap.TimeHashMapConcurrentTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeHashMapTest" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="PerformanceProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Class" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" value="" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="map.ActorsTimedConcurrentHashMap.TimeHashMapTest" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeHashMapTest.parallel Put" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="PerformanceProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Test name" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" value="" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="map.ActorsTimedConcurrentHashMap.TimeHashMapTest" />
+      <option name="testName" value="parallel Put" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TimeHashMapTest.testIRI" type="ScalaTestRunConfiguration" factoryName="ScalaTest" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="PerformanceProject" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="testKind" value="Test name" />
+      <option name="envs">
+        <map />
+      </option>
+      <option name="javaOptions" value="" />
+      <option name="jrePath" value="" />
+      <option name="searchTest" value="Across module dependencies" />
+      <option name="showProgressMessages" value="true" />
+      <option name="testArgs" value="" />
+      <option name="testClassPath" value="map.ActorsTimedConcurrentHashMap.TimeHashMapTest" />
+      <option name="testName" value="testIRI" />
+      <option name="useSbt" value="false" />
+      <option name="useUiWithSbt" value="false" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="sbt Task.Bench" />
+      <item itemvalue="ScalaTest.TimeHashMapTest" />
+      <item itemvalue="ScalaTest.TimeHashMapTest.testIRI" />
+      <item itemvalue="ScalaTest.TimeHashMapTest.parallel Put" />
+      <item itemvalue="ScalaTest.TimeHashMapConcurrentTest" />
+      <item itemvalue="ScalaTest.TimeHashMapConcurrentExternalActorTest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="ScalaTest.TimeHashMapConcurrentExternalActorTest" />
+        <item itemvalue="ScalaTest.TimeHashMapConcurrentTest" />
+        <item itemvalue="ScalaTest.TimeHashMapTest" />
+        <item itemvalue="ScalaTest.TimeHashMapConcurrentTest" />
+        <item itemvalue="ScalaTest.TimeHashMapTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="PerformanceProject" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="performanceproject [file:/home/noymiran/Downloads/PerformanceProject/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="PerformanceProject-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4673064596000" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="3856611416" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="1396028727" />
+        <entry key="$PROJECT_DIR$/project/plugins.sbt" value="2259821295" />
+      </map>
+    </option>
+    <option name="projectSyncType">
+      <map>
+        <entry key="$PROJECT_DIR$/../FiloDB" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$" value="RE_IMPORT" />
+        <entry key="$PROJECT_DIR$/../Play-ReactiveMongo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../PlayMongoForm" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../anomaliesproject" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../anomalydetection" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../getting-started-play-scala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../mamba" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-2.4-crud-with-reactive-mongo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-example-form-scala" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../play-silhouette-rest-mongo" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../playframework" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../pokedex" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../pokezen" value="PREVIEW" />
+        <entry key="$PROJECT_DIR$/../reactivemongo-demo-app" value="PREVIEW" />
+      </map>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1af69701-0d2c-49ee-ad3e-ccb20bea6851" name="Default Changelist" comment="" />
+      <created>1556891287991</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556891287991</updated>
+      <workItem from="1556891293345" duration="2860000" />
+      <workItem from="1556907499819" duration="599000" />
+      <workItem from="1556984319078" duration="1809000" />
+      <workItem from="1557211731272" duration="13775000" />
+      <workItem from="1557472741486" duration="3179000" />
+      <workItem from="1557476673709" duration="16771000" />
+      <workItem from="1557552268873" duration="4968000" />
+      <workItem from="1557583876515" duration="3614000" />
+      <workItem from="1557682531680" duration="2942000" />
+      <workItem from="1557835151747" duration="598000" />
+      <workItem from="1557843169976" duration="597000" />
+      <workItem from="1557846480277" duration="1203000" />
+      <workItem from="1557878843341" duration="3976000" />
+      <workItem from="1557929060036" duration="4449000" />
+      <workItem from="1557934674987" duration="1322000" />
+      <workItem from="1557936304318" duration="4386000" />
+      <workItem from="1558080294470" duration="289000" />
+      <workItem from="1558081049122" duration="1768000" />
+      <workItem from="1558092373332" duration="3069000" />
+      <workItem from="1558096175103" duration="35640000" />
+      <workItem from="1558343259564" duration="573000" />
+      <workItem from="1558410407276" duration="573000" />
+      <workItem from="1558426423613" duration="1178000" />
+      <workItem from="1558507331088" duration="594000" />
+      <workItem from="1558532832691" duration="2504000" />
+      <workItem from="1558550282504" duration="2976000" />
+      <workItem from="1558584519333" duration="609000" />
+      <workItem from="1558592293418" duration="471000" />
+      <workItem from="1559746059903" duration="3177000" />
+      <workItem from="1559750682940" duration="3340000" />
+      <workItem from="1559837896064" duration="596000" />
+      <workItem from="1559888913072" duration="597000" />
+      <workItem from="1560059440951" duration="1932000" />
+      <workItem from="1560093570741" duration="1358000" />
+      <workItem from="1560094989749" duration="1996000" />
+      <workItem from="1560097019416" duration="36314000" />
+      <workItem from="1560166815374" duration="5358000" />
+      <workItem from="1560184624467" duration="7144000" />
+      <workItem from="1560316944772" duration="270000" />
+      <workItem from="1560317967143" duration="1920000" />
+      <workItem from="1560319920547" duration="875000" />
+      <workItem from="1560320810490" duration="241000" />
+      <workItem from="1560321106829" duration="128000" />
+      <workItem from="1560321616154" duration="1967000" />
+      <workItem from="1560397514612" duration="891000" />
+      <workItem from="1560402660838" duration="615000" />
+      <workItem from="1560443108022" duration="5355000" />
+      <workItem from="1560587285531" duration="106000" />
+      <workItem from="1560587410036" duration="2115000" />
+      <workItem from="1560589932174" duration="1959000" />
+      <workItem from="1560593339160" duration="107000" />
+      <workItem from="1560595775266" duration="4221000" />
+      <workItem from="1560942177532" duration="10234000" />
+      <workItem from="1560976205707" duration="533000" />
+      <workItem from="1584204875510" duration="753000" />
+      <workItem from="1584703805879" duration="12000" />
+      <workItem from="1584710940579" duration="4229000" />
+      <workItem from="1584720170443" duration="519000" />
+      <workItem from="1584720715932" duration="601000" />
+      <workItem from="1584739093638" duration="34000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="TimeHashMapTest_parallel_Put - 2019.06.09 at 20h 30m 13s.xml">
+      <configuration name="TimeHashMapTest.parallel Put" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.09 at 20h 31m 21s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.09 at 20h 51m 25s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.10 at 12h 00m 09s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.10 at 12h 01m 14s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.10 at 12h 02m 34s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.14 at 23h 37m 53s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapConcurrentTest - 2019.06.15 at 00h 41m 01s.xml">
+      <configuration name="TimeHashMapConcurrentTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapTest - 2019.06.19 at 14h 07m 53s.xml">
+      <configuration name="TimeHashMapTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+    <history-entry file="TimeHashMapConcurrentTest - 2019.06.19 at 14h 09m 20s.xml">
+      <configuration name="TimeHashMapConcurrentTest" configurationId="ScalaTestRunConfiguration" />
+    </history-entry>
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/.." />
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2663" y="278" width="424" height="491" key="FileChooserDialogImpl" timestamp="1584713660230">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="278" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1584713660230" />
+    <state x="2543" y="242" width="672" height="678" key="search.everywhere.popup" timestamp="1584713631618">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2543" y="242" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.27.1920.987@1920.0.1920.1080" timestamp="1584713631618" />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>PerformanceProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
